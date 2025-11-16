@@ -1,0 +1,12 @@
+# Ignorar la base de datos Chroma
+documentos/
+
+# Ignorar archivos de entorno
+.env
+
+# Ignorar archivos temporales del sistema
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.DS_Store
