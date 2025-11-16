@@ -9,8 +9,8 @@ from google import genai
 # Cargar API key
 # ---------------------------
 load_dotenv()
-api_key = os.getenv("GENAI_API_KEY")
-
+#api_key = os.getenv("GENAI_API_KEY")
+api_key = st.secrets["GENAI_API_KEY"]
 # ---------------------------
 # Recursos cacheados
 # ---------------------------
