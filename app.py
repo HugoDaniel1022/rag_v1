@@ -29,8 +29,8 @@ client = load_client()
 # ---------------------------
 # Interfaz de Streamlit
 # ---------------------------
-st.title("📚 RAG con Gemini + Chroma")
-st.write("Haz preguntas basadas en tus PDFs cargados en la base vectorial.")
+st.title("Psicosaberes")
+st.write("Haz todas las preguntas de lo que quieras saber sobre la Psicología")
 
 query = st.text_input("Ingresa tu pregunta:")
 
@@ -80,5 +80,5 @@ RESPUESTA:
         st.write(answer)
 
         # Mostrar contexto completo usado solo si se quiere
-        with st.expander("📄 Contexto completo usado (solo para referencia interna)"):
+        with st.expander("📄 Contexto completo usado: "):
             st.text(context)
