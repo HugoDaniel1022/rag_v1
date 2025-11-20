@@ -113,23 +113,6 @@ Obtubimos mejores resultado
 Otras decisiones importantes
 Usamos Streamlit Cloud por familiaridad y facilidad para deployar el proyecto
 
-Limitaciones Conocidas
-[Limitación 1: por ejemplo, corpus pequeño]
-[Limitación 2: por ejemplo, solo funciona con español]
-[Limitación 3: por ejemplo, requiere buena conexión si usa API]
-Mejoras Futuras
- [Idea de mejora 1]
- [Idea de mejora 2]
- [Idea de mejora 3]
-Troubleshooting
-Error: "API key inválida"
-[Solución específica]
-
-Error: "Out of memory"
-[Solución específica]
-
-[Incluir otros errores comunes que encontraste]
-
 Autor
 Vanesa Cabrera & Hugo D. Peña
 

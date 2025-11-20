@@ -14,18 +14,6 @@ docs = []
 # Carpeta donde están tus PDFs
 folder_path = "documentos/"
 
-# for file_name in os.listdir(folder_path):
-#     if file_name.endswith(".pdf"):
-#         loader = PyPDFLoader(os.path.join(folder_path, file_name))
-#         docs += loader.load()  # cada PDF puede generar varios documentos/chunks
-
-
-# for file_name in os.listdir(folder_path):
-#     if file_name.endswith(".pdf"):
-#         loader = PyMuPDFLoader(os.path.join(folder_path, file_name))
-#         docs += loader.load()
-
-
 for file_name in os.listdir(folder_path):
     if file_name.endswith(".pdf"):
         loader = PyMuPDFLoader(os.path.join(folder_path, file_name))
@@ -51,10 +39,6 @@ splitter = RecursiveCharacterTextSplitter(
     separators=["\n\n", "\n", ".", " "]
 )
 chunks = splitter.split_documents(docs)
-
-# for idx, chunk in enumerate(chunks):
-#     chunk.metadata["chunk_id"] = idx
-
 
 for idx, chunk in enumerate(chunks, start=1):
     chunk.metadata["chunk_id"] = idx
