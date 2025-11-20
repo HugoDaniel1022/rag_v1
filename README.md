@@ -76,6 +76,7 @@ python indexacion.py
 Ejecutar la aplicación:
 streamlit run app.py
 Abrir en navegador: http://localhost:8501
+```
 
 Estructura del Proyecto
 ├── app.py                  # Aplicación Streamlit principal
@@ -88,25 +89,29 @@ Estructura del Proyecto
 │   └── [documentos pdf]
 ├── chroma_db/             # Base de datos vectorial (generada)
 └── .gitignore            # evita subir algunos archivos a github (opcional)
+
+
 Ejemplos de Consultas
 Probá estas consultas de ejemplo:
 
-[Ejemplo 1 específico de tu dominio]
-[Ejemplo 2 específico de tu dominio]
-[Ejemplo 3 específico de tu dominio]
+- Qué es la educación?
+- En base a qué dimensiones se define El Nivel de desorden del consultante en DBT? 
+- Cuales son las etapas del trastorno DBT?
+- Qué es El duelo?
+- En qué consiste el tratamiento para abordar el duelo?
 
 Decisiones de Diseño
-¿Por qué elegí [LLM específico]?
-[Explicar tu razonamiento]
+¿Por qué elegí Gemini?
+Más rápidez a la hora de contestar.
 
-¿Por qué [tamaño de chunk] con [overlap]?
-[Explicar experimentación y resultados]
+¿Por qué 1500 de chunksize con 150 de overlap?
+Obtubimos mejores resultados
 
-¿Por qué top-k = [número]?
-[Explicar balance entre contexto y relevancia]
+¿Por qué top-k = 3?
+Obtubimos mejores resultado
 
 Otras decisiones importantes
-[Incluir otras decisiones técnicas relevantes]
+Usamos Streamlit Cloud por familiaridad y facilidad para deployar el proyecto
 
 Limitaciones Conocidas
 [Limitación 1: por ejemplo, corpus pequeño]
@@ -126,9 +131,9 @@ Error: "Out of memory"
 [Incluir otros errores comunes que encontraste]
 
 Autor
-[Tu Nombre]
+Vanesa Cabrera & Hugo D. Peña
 
 Trabajo Integrador N°2 Materia: Procesamiento del Habla e Introducción a LLMs Institución: IFTS 24 - Tecnicatura Superior en Ciencias de Datos e IA Profesor: Matías Barreto Año: 2025
 
 Licencia
-[Elegir licencia apropiada, por ejemplo MIT] ```
+MIT
